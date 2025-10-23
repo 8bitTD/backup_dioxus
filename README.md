@@ -1,28 +1,27 @@
-# Development
+## 概要
+このリポジトリは、Rustで作ったバックアップツールのリポジトリになります
 
-Your new bare-bones project includes minimal organization with a single `main.rs` file and a few assets.
+<img width="464" height="280" alt="image" src="https://github.com/user-attachments/assets/1a5cf0d2-6174-4241-b7b3-9d7ec26be2fa" />
 
+## ビルド
+[こちら](https://dioxuslabs.com/learn/0.6/guide/tooling#setting-up-tooling)を参考にしてください。
 ```
-project/
-├─ assets/ # Any assets that are used by the app should be placed here
-├─ src/
-│  ├─ main.rs # main.rs is the entry point to your application and currently contains all components for the app
-├─ Cargo.toml # The Cargo.toml file defines the dependencies and feature flags for your project
-```
-
-
-
-### Serving Your App
-
-Run the following command in the root of your project to start developing with the default platform:
-
-```bash
-dx serve
+git clone https://github.com/8bitTD/backup_dioxus
+cd backup_dioxus
+dx serve --release
 ```
 
-To run for a different platform, use the `--platform platform` flag. E.g.
-```bash
-dx serve --platform desktop
-```
+## 使い方
+backup_dioxus.exeをダブルクリックするとGUIが表示されます
+<img width="568" height="229" alt="image" src="https://github.com/user-attachments/assets/881553a2-eba2-4957-b98b-91820092c97c" />
 
+### バックアップ先
+こちらに設定したパスにバックアップデータが集まります。
 
+### バックアップ元
+こちらに設定したパスをバックアップします。
+Enterで改行して、複数パス設定できます。
+
+### 実行
+バックアップ処理が開始されます。<br>
+<img width="608" height="293" alt="image" src="https://github.com/user-attachments/assets/4cd6b6fa-23f7-4959-a202-356863b6795e" />
