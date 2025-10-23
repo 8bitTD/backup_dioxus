@@ -1,0 +1,44 @@
+[package]
+name = "backup_dioxus"
+version = "0.1.0"
+authors = ["8bitTD <8bittd@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dioxus = { version = "0.6.3", features = [] }
+dirs = "5.0.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+native-dialog = { version = "0.9.2", features = [] }
+rm_rf = "0.6.2"
+sysinfo = "0.32.0"
+walkdir = "2.5.0"
+futures-util = "0.3.31"
+whoami = "1.5.2"
+reqwest = { version = "0.12.12", features = ["json", "blocking"] }
+tao = "0.30.8"
+image = "0.25.5"
+chrono = "0.4.39"
+num_cpus = "1.16.0"
+winsafe = { version = "0.0.26", features = ["gui", "shell"] }
+anyhow = "1.0.100"
+
+[features]
+default = ["desktop"]
+web = ["dioxus/web"]
+desktop = ["dioxus/desktop"]
+mobile = ["dioxus/mobile"]
+
+[profile]
+
+[profile.wasm-dev]
+inherits = "dev"
+opt-level = 1
+
+[profile.server-dev]
+inherits = "dev"
+
+[profile.android-dev]
+inherits = "dev"
