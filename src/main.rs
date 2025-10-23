@@ -1,5 +1,5 @@
 #![allow(non_snake_case)]
-//#![windows_subsystem = "windows"]
+#![windows_subsystem = "windows"]
 use dioxus::prelude::*;
 use dioxus::desktop::muda::*;
 use icon::load_icon_from_url;
