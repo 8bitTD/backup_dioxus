@@ -25,3 +25,6 @@ Enterで改行して、複数パス設定できます。
 ### 実行
 バックアップ処理が開始されます。<br>
 <img width="608" height="293" alt="image" src="https://github.com/user-attachments/assets/4cd6b6fa-23f7-4959-a202-356863b6795e" />
+
+## 動作確認
+Windows 11
